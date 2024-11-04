@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Vibe</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="app-title">Weather</h1>
+        <div class="search-bar">
+          <input
+            type="text"
+            placeholder="🌍 Enter a city..."
+            id="city-input"
+            class="search-input"
+          />
+          <button id="search-button" class="search-button">🔍</button>
+        </div>
+      </header>
+
+      <main class="weather-card">
+        <h2 class="location" id="location">City, Country</h2>
+        <div class="weather-info">
+          <div class="weather-icon" id="weather-icon">🌤️</div>
+          <div class="temperature" id="temperature">21°C</div>
+          <p class="weather-description" id="weather-description">
+            Sunny & Warm
+          </p>
+        </div>
+
+        <div class="weather-stats">
+          <div class="stat-item">
+            <span class="stat-icon">💧</span>
+            <span id="humidity">55%</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-icon">🌬️</span>
+            <span id="wind-speed">15 km/h</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-icon">🌧️</span>
+            <span id="precipitation">10%</span>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <p>
+          Built with ☕ by Joanna |
+          <a href="https://github.com/JoannaJoa" target="_blank">GitHub</a> |
+          Hosted on
+          <a href="https://github.com/JoannaJoa" target="_blank">Netlify</a>
+        </p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
