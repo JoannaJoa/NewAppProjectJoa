@@ -55,9 +55,6 @@ function formatDate(date) {
     "November",
     "December",
   ];
-  if (minutes < 10) {
-    minutes = `0${minutes}`;
-  }
   let month = months[date.getMonth()];
   let year = date.getFullYear();
   let dateNum = date.getDate();
