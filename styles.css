@@ -94,7 +94,11 @@ body {
   font-size: 1.5rem;
   color: #ff6b8a;
 }
-
+.date-time {
+  font-size: 16px;
+  color: #ff6b8a;
+  margin-bottom: 15px;
+}
 .weather-info {
   display: flex;
   flex-direction: column;
