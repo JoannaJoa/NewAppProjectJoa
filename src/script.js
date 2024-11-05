@@ -58,8 +58,11 @@ function formatDate(date) {
   let month = months[date.getMonth()];
   let year = date.getFullYear();
   let dateNum = date.getDate();
+  let period = hours >= 12 ? "PM" : "AM";
+  hours = hours % 12;
+  hours = hours ? hours : 12;
 
-  return `${day}, ${month} ${dateNum}, ${year}, ${hours}:${minutes}`;
+  return `${day}, ${month} ${dateNum}, ${year}, ${hours}:${minutes} ${period}`;
 }
 
 function search(event) {
