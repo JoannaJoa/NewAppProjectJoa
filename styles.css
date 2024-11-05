@@ -48,37 +48,37 @@ body {
 }
 
 .search-input {
-  flex: 1; /* Allow input to grow and fill the space */
-  padding: 10px; /* Consistent padding */
-  border-radius: 15px 0 0 15px; /* Rounded left corners */
+  flex: 1;
+  padding: 10px;
+  border-radius: 15px 0 0 15px;
   border: 1px solid var(--highlight-color);
-  font-size: 1rem; /* Consistent font size */
+  font-size: 1rem;
   color: #444;
   background: #ffe2e7;
   transition: border-color 0.3s;
-  height: 50px; /* Set a specific height */
+  height: 50px;
 }
 
 .search-input:focus {
   outline: none;
-  border-color: #ff6b8a; /* Highlighted border on focus */
+  border-color: #ff6b8a;
 }
 
 .search-button {
-  padding: 0 15px; /* Horizontal padding for button */
+  padding: 0 15px;
   border: none;
-  border-radius: 0 15px 15px 0; /* Rounded right corners */
+  border-radius: 0 15px 15px 0;
   background-color: var(--highlight-color);
   color: #ffffff;
   cursor: pointer;
-  font-size: 1.2rem; /* Responsive size */
-  height: 50px; /* Match height of input */
+  font-size: 1.2rem;
+  height: 50px;
   transition: transform 0.2s ease-in-out, background-color 0.3s;
 }
 
 .search-button:hover {
   transform: scale(1.05);
-  background-color: #ff5b5b; /* Darker shade on hover */
+  background-color: #ff5b5b;
 }
 
 .weather-card {
