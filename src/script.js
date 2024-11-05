@@ -24,12 +24,15 @@ function displayWeather(response) {
 
 function search(event) {
   event.preventDefault();
+
   let searchInputElement = document.querySelector("#city-input");
   let city = searchInputElement.value;
   let apiKey = "b6274dc355d13780dbac2ce1b85c77af";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
   axios.get(apiUrl).then(displayWeather);
+
+  searchInputElement.blur();
 }
 
-document.getElementById("search-button").addEventListener("click", search);
+document.getElementById("search-form").addEventListener("submit", search);

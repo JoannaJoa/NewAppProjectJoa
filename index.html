@@ -11,15 +11,17 @@
     <div class="container">
       <header>
         <h1 class="app-title">Weather</h1>
-        <div class="search-bar">
+        <form id="search-form" class="search-bar">
           <input
             type="text"
             placeholder="🌍 Enter a city..."
             id="city-input"
             class="search-input"
           />
-          <button id="search-button" class="search-button">🔍</button>
-        </div>
+          <button type="submit" id="search-button" class="search-button">
+            🔍
+          </button>
+        </form>
       </header>
 
       <main class="weather-card">
